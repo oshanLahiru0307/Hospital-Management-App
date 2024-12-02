@@ -33,6 +33,30 @@
         <button>MEET OUR TEAM</button>
     </div>
     
+        <div class="content1">
+        <div class="c1">
+            <h1>Our Location</h1>
+            <p>Medicare Medical center, 123 Main Street <br>
+                Borella, Colombo</p>
+        </div>
+        <div class="c2">
+            <h1>Contact</h1>
+            <ul>
+                <li>Phone:  +94777123123</li>
+                <li>Fax:    +9477712</li>
+                <li>Email:  info@medicare.lk</li>
+            </ul>
+        </div>
+        <div class="c3">
+            <h1>Opening Hours</h1>
+            <ul>
+                <li>Monday - Friday: 8.00 - 18.00</li>
+                <li>Saturday: 10.00 - 18.00</li>
+                <li>Sunday:   10.00 - 18.00</li>
+            </ul>
+        </div>
+    </div>
+    
 </body>
 
 </html>
