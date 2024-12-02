@@ -32,11 +32,13 @@
 .logo{
     display:flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo img{
     width: 70px;
     height: 70px;
+    cursor: pointer;
 }
 
 .navbar ul{
@@ -46,6 +48,10 @@
     gap: 40px;
 }
 
+.navbar ul li{
+ 	cursor: pointer;
+}
+
 .navbar button{
     width: 100px;
     height: 30px;
@@ -53,7 +59,41 @@
     border-radius: 50px;
     background-color:rgb(10, 78, 141);
     color: #ffffff;
+    cursor: pointer;
 }
+
+.banner_text{
+    position: absolute;
+    padding-left: 40px;
+    top: 40%;
+    color: #ffffff;
+    
+}
+
+.banner_text h2{
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.banner_text h1{
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.banner_text button{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    cursor: pointer;
+}
+
 
 
 

@@ -25,6 +25,14 @@
             <button>Sign in</button>
         </nav>
     </div>
+        <div class="banner_text">
+        <h2>Private Equity Treatment</h2>
+        <h1>Health Care Services</h1>
+        <p>We have established a team investment profesionals, <br>
+        focused on buyout and growth equity invesment.</p>
+        <button>MEET OUR TEAM</button>
+    </div>
+    
 </body>
 
 </html>
