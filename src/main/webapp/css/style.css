@@ -149,6 +149,21 @@
     padding-bottom: 10px;
 }
 
+.our_services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.our_services h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
 
 
 

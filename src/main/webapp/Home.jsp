@@ -57,6 +57,13 @@
         </div>
     </div>
     
+    <div class="our_services">
+        <h2>Our Services</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias quasi laborum soluta,<br> 
+            ea rerum autem non rem omnis quas consectetur culpa, explicabo ex. Sint ratione accusamus totam
+            Totam, perferendis</p>
+    </div>
+    
 </body>
 
 </html>
