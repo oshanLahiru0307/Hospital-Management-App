@@ -8,7 +8,7 @@
 }
 
 .banner{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/img1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/img1.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -32,13 +32,11 @@
 .logo{
     display:flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .logo img{
     width: 70px;
     height: 70px;
-    cursor: pointer;
 }
 
 .navbar ul{
@@ -48,10 +46,6 @@
     gap: 40px;
 }
 
-.navbar ul li{
- 	cursor: pointer;
-}
-
 .navbar button{
     width: 100px;
     height: 30px;
@@ -59,7 +53,6 @@
     border-radius: 50px;
     background-color:rgb(10, 78, 141);
     color: #ffffff;
-    cursor: pointer;
 }
 
 .banner_text{
@@ -104,7 +97,7 @@
 .c1, .c2, .c3 {
     flex: 1; /* Equal column width */
     padding: 20px;
-    height: 160px;
+    height: 200px;
     color: #ffffff;
     padding: 30px 70px;
 }
@@ -163,6 +156,7 @@
     font-size: 30px;
     padding-bottom: 20px;
 }
+
 
 
 
