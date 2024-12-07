@@ -142,7 +142,7 @@
     margin: 80px 80px;
 }
 
-.our_services, .our_experts{
+.our_services, .our_experts,.blog{
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex; 
@@ -294,4 +294,128 @@
     font-size: 18px;
     font-weight: bold;
     color: #333;
+  }
+  
+  .container3{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    padding: 0 80px;
+    flex-direction: column;
+    background-color: rgb(223, 241, 255);
+    height: 700px;
+}
+
+.blog{
+  gap: 15px;
+}
+
+.blog h2{
+  font-weight: bold;
+}
+
+.crds{
+  text-align: left;
+  margin-top: 40px;
+}
+
+.btn1{
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.card-img1{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img2{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img3{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img4{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img5{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(12\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img6{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(6\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-img7{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(7\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img8{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(8\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img9{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(9\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img10{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(10\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img11{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(11\).jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img12{
+    width: auto;
+    height: 300px;
+    background: url(../images/doc_img_1\ \(12\).jpg);
+    background-position: center;
+    background-size: cover;
   }

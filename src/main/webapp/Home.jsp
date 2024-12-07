@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 </head>
 
@@ -209,149 +210,137 @@
     <div class="container2">
         <div class="our_experts">
             <h2>Our Medical Experts</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias quasi laborum soluta,<br> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias quasi laborum soluta,<br>
                 ea rerum autem non rem omnis quas consectetur culpa, explicabo ex. Sint ratione accusamus totam
                 Totam, perferendis</p>
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Neurology</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img1"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Neurology</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cardiac Surgery">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img2"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img3"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Neurology</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cardiac Surgery">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img4"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Neurology</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img5"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Neurology</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cardiac Surgery">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img6"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img7"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
-                                <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img8"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img9"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Neurology</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img10"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cardiac Surgery</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img11"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card expert_card">
+                                <div class="card-img12"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
+                                    <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
-        <div class="appointment-section">
+    <div class="appointment-section">
         <div class="container">
             <div class="row">
                 <!-- Left Section -->
@@ -439,6 +428,49 @@
         </div>
     </div>
  
+ 	<div class="container3">
+
+    <div class="blog">
+            <h2>Latest From Our Blog</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias quasi laborum soluta,<br>
+                ea rerum autem non rem omnis quas consectetur culpa, explicabo ex. Sint ratione accusamus totam
+                Totam, perferendis</p>
+
+            <div class="crds">  
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/img (2).jpg" class="card-img-top" alt="Neurology">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">MEDICAL CARE</a></h5>
+                                <p class="card-text">Good Health Habits Can Help Stop Germs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/img1.jpg " class="card-img-top" alt="Cardiac Surgery">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">HEALTH</a></h5>
+                                <p class="card-text">Important tips for your health and better living</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/img (3).jpg" class="card-img-top" alt="Bills & Insurance">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">MEDICAL CARE</a></h5>
+                                <p class="card-text">Fusce porttitor dui ultricies placerat adipiscing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn1">MORE NEWS</button>    
+        </div>
+    </div>
+
 </body>
 
 </html>
