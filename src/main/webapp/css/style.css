@@ -419,3 +419,36 @@
     background-position: center;
     background-size: cover;
   }
+  
+  /* Stats Section Styles */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.stat h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.stat p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}

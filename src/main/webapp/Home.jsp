@@ -470,7 +470,67 @@
             <button class="btn1">MORE NEWS</button>    
         </div>
     </div>
+    
+    <section class="stats-section" id="stats-section">
+        <div class="stat">
+          <i class="fas fa-user-md"></i>
+          <h2 class="counter" data-target="50">0</h2>
+          <p>Medical Experts</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-bed"></i>
+          <h2 class="counter" data-target="250">0</h2>
+          <p>Hospital Rooms</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-gem"></i>
+          <h2 class="counter" data-target="49">0</h2>
+          <p>Awards Won</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-smile"></i>
+          <h2 class="counter" data-target="5000">0</h2>
+          <p>Happy Patients</p>
+        </div>
+      </section>
 
+      <script>
+        // Function to run counters
+        function runCounters() {
+          const counters = document.querySelectorAll(".counter");
+          counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            const increment = target / 100; // Adjust speed by changing divisor
+    
+            let count = 0;
+            const updateCounter = () => {
+              count += increment;
+              if (count < target) {
+                counter.textContent = "+" + Math.ceil(count);
+                requestAnimationFrame(updateCounter); // Smooth animation
+              } else {
+                counter.textContent = "+" + target;
+              }
+            };
+    
+            updateCounter();
+          });
+        }
+    
+        // Detect when stats section is visible
+        const statsSection = document.getElementById("stats-section");
+        const observer = new IntersectionObserver(entries => {
+          if (entries[0].isIntersecting) {
+            runCounters();
+            observer.disconnect(); // Stop observing once counters have run
+          }
+        }, { threshold: 0.5 });
+    
+        observer.observe(statsSection);
+      </script>
+    
+      <!-- Font Awesome Icons -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
