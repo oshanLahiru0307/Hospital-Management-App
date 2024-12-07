@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
+                            <img src="images/img (2).jpg" class="card-img-top" alt="Neurology">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Neurology</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
+                            <img src="images/img (3).jpg" class="card-img-top" alt="Bills & Insurance">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
+                            <img src="images/img (1).jpg" class="card-img-top" alt="Cancer Screening">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -119,7 +119,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
+                            <img src="images/img (2).jpg" class="card-img-top" alt="Neurology">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Neurology</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -139,7 +139,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
+                            <img src="images/img (3).jpg" class="card-img-top" alt="Bills & Insurance">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
+                            <img src="images/img (1).jpg" class="card-img-top" alt="Cancer Screening">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -163,7 +163,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Neurology">
+                            <img src="images/img (2).jpg" class="card-img-top" alt="Neurology">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Neurology</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Bills & Insurance">
+                            <img src="images/img (3).jpg" class="card-img-top" alt="Bills & Insurance">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Bills & Insurance</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/img1.jpg" class="card-img-top" alt="Cancer Screening">
+                            <img src="images/img (1).jpg" class="card-img-top" alt="Cancer Screening">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">Cancer Screening</a></h5>
                                 <p class="card-text">Integer tincidunt justo eu blandit dictum. Sed euismod...</p>
@@ -494,7 +494,66 @@
         </div>
       </section>
 
-      <script>
+	<div class="subcription">
+        <div class="inner_part">
+            <h2>I'm Ready to Help You</h2>
+        <h1>Subscribe for Monthly Health Tips</h1>
+        <form action="">
+            <input type="text" placeholder="Enter Your Email Address">
+            <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+        </div>
+      </div>
+
+    <footer>
+        <div class="footer-container">
+          <!-- Column 1: Logo and Description -->
+          <div class="footer-column">
+            <h3>Medicare</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget faucibus felis pharetra.
+            </p>
+            <div class="footer-social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <!-- Column 2: Services -->
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <p><a href="#">Bills & Insurance</a></p>
+            <p><a href="#">Cancer Screening</a></p>
+            <p><a href="#">Cardiac Surgery</a></p>
+            <p><a href="#">Neurology</a></p>
+          </div>
+          <!-- Column 3: Specialist Doctors -->
+          <div class="footer-column">
+            <h3>Specialist Doctors</h3>
+            <p><a href="#">Larry Schmidt</a></p>
+            <p><a href="#">Roger Schneider</a></p>
+            <p><a href="#">Theresa Hamilton</a></p>
+            <p><a href="#">Brittany Robertson</a></p>
+            <p><a href="#">Raymond Payne</a></p>
+          </div>
+          <!-- Column 4: Contact Info -->
+          <div class="footer-column">
+            <h3>The Heart Of Clinic</h3>
+            <p>Dr. Jonathan Barnes</p>
+            <p>Chief Medical Officer</p>
+            <p>1-800-1234-567</p>
+            <p>
+              Aliquam orci nullam tempor sapien orci gravida donec enim ipsum porta justo integer.
+            </p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 All Rights Reserved. Made with <span style="color: #00aaff;">&#10084;</span> by <a href="#">ThemePerch</a>.
+        </div>
+      </footer>
+      
+    <script>
         // Function to run counters
         function runCounters() {
           const counters = document.querySelectorAll(".counter");
@@ -528,9 +587,10 @@
     
         observer.observe(statsSection);
       </script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
-      <!-- Font Awesome Icons -->
-      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
