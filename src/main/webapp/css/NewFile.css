@@ -23,10 +23,11 @@
     width: 100%;
     background: #ffffff !important;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 50px !important;
     color: rgb(6, 44, 80);
     height: auto;
     position: fixed !important;
+    z-index: 1;
 }
 
 .logo{
@@ -50,30 +51,64 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding: 0;
     margin-bottom: 0;
 }
 
+.navbar ul li{
+	border-radius: 25px;
+	transition: 0.7s;
+}
+
+.navbar ul li:hover{
+	background-color: rgb(10, 78, 141);
+	border: 1px rgb(99, 99, 99);
+	border-radius: 25px;
+	scale: 1.1;
+}
+
 .navbar ul li a{
-text-decoration: none;
-color: #000000;
-font-weight: 600px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 600px;
+	padding: 20px;
+	transition: 0.7s;
+}
+
+.navbar ul li a:hover{
+	color: #ffffff;
 }
 
 .navbar button a{
-  text-decoration: none;
-color: #ffffff;
-font-weight: 800px;
+  	text-decoration: none;
+	color: #ffffff;
+	font-weight: 800px;
 }
 
 .navbar button{
-    width: 200px;
-    height: 30px;
+	margin-right: 20px;
+  	width: 250px;
+   height: 40px;
     border: none;
     border-radius: 50px;
     background-color:rgb(10, 78, 141);
     color: #ffffff;
+    transition: 0.5s;
 }
 
+.navbar button:hover{
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(10, 78, 141);
+    scale: 1.1;
+}
+
+.navbar button a:hover{
+	color: rgb(10, 78, 141);
+}
+.navbar button a{
+	transition: 0.5s;
+}
 .banner_text{
     position: absolute;
     padding-left: 40px;

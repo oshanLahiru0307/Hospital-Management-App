@@ -2,19 +2,17 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Medicare</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="ISO-8859-1">
+<title>Medicare</title>
+    <link rel="stylesheet" href="css/NewFile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
 </head>
-
 <body>
-    <div class="banner">
+<div class="banner">
         <nav class="navbar">
             <div class="logo">
                 <img src="images/logo.jpg" alt="logo">
@@ -27,9 +25,10 @@
                 <li><a href = "#">Contact us</a></li>
                 <li><a href = "#">About us</a></li>
             </ul>
-           	<button><a href="#">Sign in</a></button>
+           	<button><a href="#">Make Appointment</a></button>
         </nav>
     </div>
+    
     <div class="banner_text">
         <h2>Private Equity Treatment</h2>
         <h1>Health Care Services</h1>
@@ -37,8 +36,8 @@
         focused on buyout and growth equity invesment.</p>
         <button>MEET OUR TEAM</button>
     </div>
-
-    <div class="content1">
+    
+        <div class="content1">
         <div class="c1">
             <h1>Our Location</h1>
             <p>Medicare Medical center, 123 Main Street <br>
@@ -61,8 +60,8 @@
             </ul>
         </div>
     </div>
-
-    <div class="container1">
+    
+        <div class="container1">
         <div class="our_services">
             <h2>Our Services</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias quasi laborum soluta,<br> 
@@ -206,7 +205,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="container2">
         <div class="our_experts">
             <h2>Our Medical Experts</h2>
@@ -340,7 +339,7 @@
         </div>
     </div>
     
-    <div class="appointment-section">
+     <div class="appointment-section">
         <div class="container">
             <div class="row">
                 <!-- Left Section -->
@@ -427,8 +426,8 @@
             </div>
         </div>
     </div>
- 
- 	<div class="container3">
+    
+    <div class="container3">
 
     <div class="blog">
             <h2>Latest From Our Blog</h2>
@@ -471,7 +470,7 @@
         </div>
     </div>
     
-    <section class="stats-section" id="stats-section">
+     <section class="stats-section" id="stats-section">
         <div class="stat">
           <i class="fas fa-user-md"></i>
           <h2 class="counter" data-target="50">0</h2>
@@ -493,8 +492,8 @@
           <p>Happy Patients</p>
         </div>
       </section>
-
-	<div class="subcription">
+      
+      <div class="subcription">
         <div class="inner_part">
             <h2>I'm Ready to Help You</h2>
         <h1>Subscribe for Monthly Health Tips</h1>
@@ -504,8 +503,8 @@
         </form>
         </div>
       </div>
-
-    <footer>
+      
+       <footer>
         <div class="footer-container">
           <!-- Column 1: Logo and Description -->
           <div class="footer-column">
@@ -553,7 +552,7 @@
         </div>
       </footer>
       
-    <script>
+      <script>
         // Function to run counters
         function runCounters() {
           const counters = document.querySelectorAll(".counter");
@@ -587,10 +586,6 @@
     
         observer.observe(statsSection);
       </script>
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
+          <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
