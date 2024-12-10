@@ -15,20 +15,20 @@
 
 <body>
     <div class="banner">
-        <nav class="navbar">
+        <div class="navbar">
             <div class="logo">
-                <img src="images/logo1.png" alt="logo">
-                <h1>Medicare</h1>
+                <img src="images/logo.jpg" alt="logo">
+                <h1>MEDICARE</h1>
             </div>
             <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Blog</li>
-                <li>Contact us</li>
-                <li>About us</li>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">Services</a></li>
+                <li><a href = "#">Blog</a></li>
+                <li><a href = "#">Contact us</a></li>
+                <li><a href = "#">About us</a></li>
             </ul>
-            <button>Sign in</button>
-        </nav>
+           	<button><a href="">Sign in</a></button>
+        </div>
     </div>
     <div class="banner_text">
         <h2>Private Equity Treatment</h2>
