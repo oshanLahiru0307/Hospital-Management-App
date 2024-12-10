@@ -17,12 +17,12 @@
         <nav class="sidebar">
             <h2 class="sidebar-title">MEDICARE</h2>
             <ul class="menu">
-                <li class="active"><a href="appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+                <li class="active"><a href="Appoinment.jsp"><i class="fas fa-calendar-check"></i> Appointments</a>
                 </li>
-                <li><a href="patients.html"><i class="fas fa-user"></i> Patients</a></li>
-                <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
-                <li><a href="anouncement.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
-                <li><a href="inventory.html"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="Patient.jsp"><i class="fas fa-user"></i> Patients</a></li>
+                <li><a href="Doctors.jsp"><i class="fas fa-user-md"></i> Doctors</a></li>
+                <li><a href="Announcement.jsp"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                <li><a href="Inventory.jsp"><i class="fas fa-box"></i> Inventory</a></li>
             </ul>
             <div class="logout">
                 <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
@@ -49,7 +49,7 @@
                             <th scope="col">Specialist</th>
                             <th scope="col">Doctor Name</th>
                             <th scope="col">Contact</th>
-                            <th scope="col">Action</th>
+                            <th scope="col" class="act">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -60,9 +60,9 @@
                             <td>Neurology</td>
                             <td>Jhoen</td>
                             <td>0711122233</td>
-                            <td>
+                            <td class="action-column">
                                 <button type="button" class="btn btn-outline-primary">Approve</button>
-                                <button type="button" class="btn btn-outline-danger">Cancle</button>
+                                <button type="button" class="btn btn-outline-danger">Cancel</button>
                                 <button type="button" class="btn btn-outline-warning">Edit</button>
 
                             </td>

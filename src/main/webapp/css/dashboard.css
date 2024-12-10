@@ -189,4 +189,19 @@
     background-color: #2980b9;
 }
 
+.table .action-column {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* Align vertically in the center */
+}
+
+.table .act{
+	text-align: center;
+}
+
+.table tbody tr th, .table tbody tr td{
+	font-weight: normal;
+}
+
 

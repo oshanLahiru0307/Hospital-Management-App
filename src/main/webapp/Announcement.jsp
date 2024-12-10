@@ -20,8 +20,8 @@
                 <li><a href="Appoinment.jsp"><i class="fas fa-calendar-check"></i> Appointments</a>
                 </li>
                 <li><a href="Patient.jsp"><i class="fas fa-user"></i> Patients</a></li>
-                <li class="active"><a href="Doctors.jsp"><i class="fas fa-user-md"></i> Doctors</a></li>
-                <li><a href="Announcement.jsp"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                <li><a href="Doctors.jsp"><i class="fas fa-user-md"></i> Doctors</a></li>
+                <li class="active"><a href="Announcement.jsp"><i class="fas fa-bullhorn"></i> Announcements</a></li>
                 <li><a href="Inventory.jsp"><i class="fas fa-box"></i> Inventory</a></li>
             </ul>
             <div class="logout">
@@ -37,8 +37,8 @@
             </header>
             <section class="content">
                 <div class="content-header">
-                    <h2>Doctors Records</h2>
-                    <button class="btn btn-primary action-btn">Add Doctor</button>
+                    <h2>Announcements Records</h2>
+                    <button class="btn btn-primary action-btn">Add Announcement</button>
                 </div>
                 <table class="table">
                     <thead class="table-dark">
