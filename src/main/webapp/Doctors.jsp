@@ -87,10 +87,8 @@
                             <td>Jhoen</td>
                             <td>0711122233</td>
                             <td class="action-column">
-                                <button type="button" class="btn btn-outline-primary">Approve</button>
-                                <button type="button" class="btn btn-outline-danger">Cancel</button>
                                 <button type="button" class="btn btn-outline-warning">Edit</button>
-
+                                <button type="button" class="btn btn-outline-danger">Cancel</button>
                             </td>
                         </tr>
                     </tbody>
