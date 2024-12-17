@@ -32,7 +32,7 @@ public class AppointmentController extends HttpServlet {
         appointmentDao.deleteAppointment(appId);
         
         RequestDispatcher view = request.getRequestDispatcher("/Appoinment.jsp");
-        request.setAttribute("appointments", appointmentDao.getAllAppointments());
+        request.setAttribute("message", "success");
         view.forward(request, response); 
 	}
 
@@ -40,6 +40,7 @@ public class AppointmentController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 String action = request.getParameter("action");
 		 System.out.println(action);
+		 
 		 if("edit".equals(action)) { 
 			 try {
 	                // Retrieve appointment data from form
@@ -57,13 +58,14 @@ public class AppointmentController extends HttpServlet {
 
 	                // Redirect back to the appointment list
 	    	        RequestDispatcher view = request.getRequestDispatcher("/Appoinment.jsp");
+	    	        request.setAttribute("message", "success");
 	    	        view.forward(request, response); 
 	                
 	            } catch (Exception e) {
 	                e.printStackTrace();
-	                request.setAttribute("error", "Failed to update appointment.");
-	                RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
-	                dispatcher.forward(request, response);
+	    	        RequestDispatcher view = request.getRequestDispatcher("/Appoinment.jsp");
+	    	        request.setAttribute("message", "failed");
+	    	        view.forward(request, response);
 	            }
 			 
 		 }else {
@@ -82,8 +84,8 @@ public class AppointmentController extends HttpServlet {
 		 }
 		 
 	        RequestDispatcher view = request.getRequestDispatcher("/Appoinment.jsp");
-	        request.setAttribute("appointments", appointmentDao.getAllAppointments());
-	        view.forward(request, response);
+	        request.setAttribute("message", "success");
+	        view.forward(request, response); 
 		 
 	}
 
