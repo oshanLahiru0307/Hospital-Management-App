@@ -24,6 +24,7 @@ public class AppointmentDao {
 	 
 
 	 public void addAppointment(Appointment appointment) {
+		 
 	        try {
 	            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO appointment(time, date, patient_name, pateint_age, doctor, phone) values (?, ?, ?, ?, ?, ?)");
 	            preparedStatement.setString(1, appointment.getTime());
