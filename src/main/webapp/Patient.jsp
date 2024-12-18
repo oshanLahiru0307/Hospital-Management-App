@@ -43,11 +43,11 @@
             <section class="content">
                 <div class="content-header">
                     <h2>Patients</h2>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAppointment"
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPatient"
                         data-bs-whatever="@mdo">Add Patients</button>
                         
                     <!--Add Appointment Modal -->    
-                    <div class="modal fade" id="addAppointment" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="addPatient" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -58,7 +58,7 @@
                                 </div>
                                 
                                 <div class="modal-body">
-                                    <form action="app" method="post">
+                                    <form action="patient" method="post">
                                     	<input type="hidden" class="form-control" id="action" name="action" value="add">	
                                         <div class="mb-3">
                                             <label for="patient_name" class="col-form-label">Patient Name:</label>

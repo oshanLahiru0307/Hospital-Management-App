@@ -37,7 +37,7 @@ public class PatientDao {
 		
 	}
 	
-	public List<Patient> getPatient(){
+	public List<Patient> getAllPatient(){
 		ArrayList<Patient> patients= new ArrayList<>();
 		return patients;
 	}

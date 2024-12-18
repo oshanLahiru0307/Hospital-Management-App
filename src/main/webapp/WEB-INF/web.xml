@@ -20,5 +20,15 @@
   	<url-pattern>/app</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>PatientController</servlet-name>
+  	<servlet-class>Controller.PatientController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>PatientController</servlet-name>
+  	<url-pattern>/patient</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
