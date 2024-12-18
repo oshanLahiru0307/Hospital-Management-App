@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="java.util.*, Model.Appointment, Dao.AppointmentDao" %>
+<%@ page import="java.util.*, Model.Patient, Dao.PatientDao" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,56 +104,61 @@
                     </thead>
                     <tbody>
                     	<%
-                			AppointmentDao dao = new AppointmentDao();
-                			List<Appointment> appointments = dao.getAllAppointments();
-                			for (Appointment appointment : appointments) {
+                			PatientDao dao = new PatientDao();
+                			List<Patient> patients = dao.getAllPatient();
+                			for (Patient patient : patients) {
             			%>
                     
             			<tr>
-                			<td><%= appointment.getId() %></td>
-                			<td><%= appointment.getPatient_name() %></td>
-                			<td><%= appointment.getPateint_age() %></td>
-                			<td><%= appointment.getDoctor() %></td>
-                			<td><%= appointment.getContact() %></td>
+                			<td><%= patient.getPatientId()%></td>
+                			<td><%= patient.getPatient_name()%></td>
+                			<td><%= patient.getPatient_age() %></td>
+                			<td><%= patient.getBlood_group() %></td>
+                			<td><%= patient.getContact() %></td>
+                			<td><%= patient.getEmail() %></td>
                 			<td class="act">
-                    		<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#<%= appointment.getId() %>"
+                    		<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#<%= patient.getPatientId() %>"
                         	data-bs-whatever="@mdo">Edit</button>
-                    		<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#delete<%= appointment.getId() %>"
+                    		<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#delete<%= patient.getPatientId() %>"
                         	data-bs-whatever="@mdo">Cancel</button>
                 			</td>
             		</tr>
             		
             		 <!--Edit Appointment Modal -->    
-                    <div class="modal fade" id="<%= appointment.getId() %>" tabindex="-1" aria-labelledby="<%= appointment.getId() %>"
+                    <div class="modal fade" id="<%= patient.getPatientId() %>" tabindex="-1" aria-labelledby="<%= patient.getPatientId() %>"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="<%= appointment.getId() %>">Edit Appointment</h1>
+                                    <h1 class="modal-title fs-5" id="<%= patient.getPatientId() %>">Edit Patient</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 
                                 <div class="modal-body">
-                                    <form action="app" method="post">
+                                    <form action="patient" method="post">
                                     	<input type="hidden" class="form-control" id="action" name="action" value="edit">
-                                    	<input type="hidden" name="id" value="<%= appointment.getId() %>">	
+                                    	<input type="hidden" name="id" value="<%= patient.getPatientId() %>">	
                                     	
                                         <div class="mb-3">
                                             <label for="patient_name" class="col-form-label">Patient Name:</label>
-                                            <input type="text" class="form-control" id="patient_name" name="name" value="<%= appointment.getPatient_name() %>">
+                                            <input type="text" class="form-control" id="patient_name" name="name" value="<%= patient.getPatient_name()  %>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="patient_age" class="col-form-label">Patient Age:</label>
-                                            <input type="text" class="form-control" id="patient_age" name="age" value="<%= appointment.getPateint_age() %>">
+                                            <input type="text" class="form-control" id="patient_age" name="age" value="<%= patient.getPatient_age() %>">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="blood_grp" class="col-form-label">Blood Group:</label>
+                                            <input type="blood_grp" class="form-control" id="blood_grp" name="blood_grp" value="<%= patient.getBlood_group()%>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="phone" class="col-form-label">Phone:</label>
-                                            <input type="phone" class="form-control" id="phone" name="phone" value="<%= appointment.getContact() %>">
+                                            <input type="phone" class="form-control" id="phone" name="phone" value="<%= patient.getContact() %>">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="Doctor" class="col-form-label">Doctor:</label>
-                                            <input type="text" class="form-control" id="Doctor" name="doctor" value="<%= appointment.getDoctor() %>">
+                                            <label for="email" class="col-form-label">Email:</label>
+                                            <input type="email" class="form-control" id="email" name="email" value="<%= patient.getEmail() %>">
                                         </div>
                                         <div class="modal-footer">
                                     		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -167,21 +172,21 @@
                     
                     <!--delete Appointment Modal --> 
                     
-                     <div class="modal fade" id="delete<%= appointment.getId() %>" tabindex="-1" aria-labelledby="<%= appointment.getId() %>"
+                     <div class="modal fade" id="delete<%= patient.getPatientId() %>" tabindex="-1" aria-labelledby="<%= patient.getPatientId() %>"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="<%= appointment.getId() %>">Delete Appointment</h1>
+                                    <h1 class="modal-title fs-5" id="<%= patient.getPatientId() %>">Delete Patient</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 
                                 <div class="modal-body">
-									<p>Do you want to cancel this appointment?</p>
+									<p>Do you want to remove this patient?</p>
                                     <div class="modal-footer">
                                     	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                    	<a href="app?&id=<%= appointment.getId() %>"><button type="submit" class="btn btn-danger" name="submit">Confirm</button></a>
+                                    	<a href="patient?&id=<%= patient.getPatientId() %>"><button type="submit" class="btn btn-danger" name="submit">Confirm</button></a>
                                 	</div>
                                 </div>
                             </div>
