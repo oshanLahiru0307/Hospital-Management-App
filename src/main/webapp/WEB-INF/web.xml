@@ -30,7 +30,7 @@
   	<url-pattern>/patient</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+   <servlet>
   	<servlet-name>DoctorController</servlet-name>
   	<servlet-class>Controller.DoctorController</servlet-class>
   </servlet>
@@ -40,5 +40,24 @@
   	<url-pattern>/doctor</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+  	<servlet-name>Announcement</servlet-name>
+  	<servlet-class>Controller.Announcement</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Announcement</servlet-name>
+  	<url-pattern>/announcement</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>InventoryController</servlet-name>
+  	<servlet-class>Controller.InventoryController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>InventoryController</servlet-name>
+  	<url-pattern>/inventory</url-pattern>
+  </servlet-mapping>
   
 </web-app>
