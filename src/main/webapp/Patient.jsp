@@ -150,7 +150,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="blood_grp" class="col-form-label">Blood Group:</label>
-                                            <input type="blood_grp" class="form-control" id="blood_grp" name="blood_grp" value="<%= patient.getBlood_group()%>">
+                                            <input type="text" class="form-control" id="blood_grp" name="blood_grp" value="<%= patient.getBlood_group()%>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="phone" class="col-form-label">Phone:</label>

@@ -33,7 +33,7 @@ public class DoctorController extends HttpServlet {
 			
 			doctordao.deleteDoctor(id);
 			
-	        RequestDispatcher view = request.getRequestDispatcher("/Doctor.jsp");
+	        RequestDispatcher view = request.getRequestDispatcher("/Doctors.jsp");
 	        request.setAttribute("message", "success");
 	        view.forward(request, response);
 	        
@@ -63,7 +63,7 @@ public class DoctorController extends HttpServlet {
 				
 				doctordao.updateDoctor(doctor);
 				
-				RequestDispatcher view = request.getRequestDispatcher("/Doctor.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/Doctors.jsp");
 		        request.setAttribute("message", "success");
 		        view.forward(request, response);
 				
@@ -85,7 +85,7 @@ public class DoctorController extends HttpServlet {
 				
 				doctordao.addDoctor(doctor);
 				
-				RequestDispatcher view = request.getRequestDispatcher("/Doctor.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/Doctors.jsp");
 		        request.setAttribute("message", "success");
 		        view.forward(request, response);
 				

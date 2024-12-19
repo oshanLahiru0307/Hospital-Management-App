@@ -24,7 +24,7 @@ public class DoctorDao {
 		
 		 try {
 	        	
-	            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE patient SET name = ?, refno = ?,  specialization = ?, phone = ?, email = ? WHERE id = ?");
+	            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE doctor SET name = ?, refno = ?,  specialization = ?, phone = ?, email = ? WHERE id = ?");
 	            preparedStatement.setString(1, doctor.getName());
 	            preparedStatement.setString(2, doctor.getRefNo());
 	            preparedStatement.setString(3, doctor.getSpecialization());
@@ -60,7 +60,7 @@ public class DoctorDao {
 		
 		ArrayList<Doctor> doctors = new ArrayList<>();
 		
-		String query = "SELECT * FROM patient";
+		String query = "SELECT * FROM doctor";
 		
         try (Statement statement = connection.createStatement();
         		ResultSet resultSet = statement.executeQuery(query)) {
