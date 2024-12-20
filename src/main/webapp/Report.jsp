@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="java.util.*, Model.Doctor, Dao.DoctorDao" %>
+<%@ page import="java.util.*, Model.Report, Dao.ReportDao" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="Patient.jsp"><i class="fas fa-user"></i> Patients</a></li>
                 <li><a href="Doctors.jsp"><i class="fas fa-user-md"></i> Doctors</a></li>
-                <li class="active"><a href="Announcement.jsp"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                <li class="active"><a href="Report.jsp"><i class="fas fa-bullhorn"></i> Reports</a></li>
                 <li><a href="Inventory.jsp"><i class="fas fa-box"></i> Inventory</a></li>
             </ul>
             <div class="logout">
@@ -42,44 +42,36 @@
             
             <section class="content">
                 <div class="content-header">
-                    <h2>Announcements</h2>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDoctor"
-                        data-bs-whatever="@mdo">Add Doctor</button>
+                    <h2>Patient Reports</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReport"
+                        data-bs-whatever="@mdo">Add Report</button>
                         
                     <!--Add Appointment Modal -->    
-                    <div class="modal fade" id="addDoctor" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="addReport" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Doctor</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Report</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 
                                 <div class="modal-body">
-                                    <form action="doctor" method="post">
+                                    <form action="report" method="post">
                                     	<input type="hidden" class="form-control" id="action" name="action" value="add">	
                                         <div class="mb-3">
-                                            <label for="doctor_name" class="col-form-label">Doctor Name:</label>
-                                            <input type="text" class="form-control" id="doctor_name" name="name">
+                                            <label for="patient_name" class="col-form-label">Patient Name:</label>
+                                            <input type="text" class="form-control" id="patient_name" name="patient_name">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="refno" class="col-form-label">Ref No:</label>
-                                            <input type="text" class="form-control" id="refno" name="refno">
+                                            <label for="type" class="col-form-label">Type:</label>
+                                            <input type="text" class="form-control" id="type" name="type">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="specialization" class="col-form-label">Specialization:</label>
-                                            <input type="text" class="form-control" id="specialization" name="specialization">
+                                            <label for="status" class="col-form-label">Status:</label>
+                                            <input type="text" class="form-control" id="status" name="status">
                                         </div>                                        
-                                        <div class="mb-3">
-                                            <label for="phone" class="col-form-label">Phone:</label>
-                                            <input type="phone" class="form-control" id="phone" name="phone">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email:</label>
-                                            <input type="email" class="form-control" id="email" name="email">
-                                        </div>
                                         <div class="modal-footer">
                                     		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                     		<button type="submit" class="btn btn-primary" name="submit">Confirm</button>
@@ -94,72 +86,61 @@
                     <thead class="table-dark">
                         <tr>
                         	<th scope="col">Id</th>
-                            <th scope="col">Doctor Name</th>
-                            <th scope="col">Ref No</th>
-                            <th scope="col">Specialization</th>
-                            <th scope="col">Contact</th>
-                           	<th scope="col">Email</th>
+                            <th scope="col">Patient Name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Status</th>
                             <th scope="col" class="act">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                     	<%
-                			DoctorDao dao = new DoctorDao();
-                			List<Doctor> doctors = dao.getAllDoctors();
-                			for (Doctor doctor : doctors) {
+                			ReportDao dao = new ReportDao();
+                			List<Report> reports = dao.getAllReports();
+                			for (Report report : reports) {
             			%>
                     
             			<tr>
-                			<td><%= doctor.getDoctorId()%></td>
-                			<td><%= doctor.getName()%></td>
-                			<td><%= doctor.getRefNo()%></td>
-                			<td><%= doctor.getSpecialization()%></td>
-                			<td><%= doctor.getContact()%></td>
-                			<td><%= doctor.getEmail()%></td>
+                			<td><%= report.getId()%></td>
+                			<td><%= report.getPatient_name()%></td>
+                			<td><%= report.getType()%></td>
+                			<td><%= report.getStatus()%></td>
                 			<td class="act">
-                    		<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#<%= doctor.getDoctorId() %>"
+                    		<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#<%= report.getId()%>"
                         	data-bs-whatever="@mdo">Edit</button>
-                    		<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#delete<%= doctor.getDoctorId() %>"
+                    		<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#delete<%= report.getId()%>"
                         	data-bs-whatever="@mdo">Cancel</button>
                 			</td>
             		</tr>
             		
             		 <!--Edit Appointment Modal -->    
-                    <div class="modal fade" id="<%= doctor.getDoctorId() %>" tabindex="-1" aria-labelledby="<%= doctor.getDoctorId() %>"
+                    <div class="modal fade" id="<%= report.getId()%>" tabindex="-1" aria-labelledby="<%= report.getId()%>"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="<%= doctor.getDoctorId() %>">Edit Doctor</h1>
+                                    <h1 class="modal-title fs-5" id="<%= report.getId()%>">Edit Report</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 
                                 <div class="modal-body">
-                                    <form action="doctor" method="post">
+                                    <form action="report" method="post">
                                     	<input type="hidden" class="form-control" id="action" name="action" value="edit">
-                                    	<input type="hidden" name="id" value="<%= doctor.getDoctorId() %>">	
+                                    	<input type="hidden" name="id" value="<%= report.getId()%>">	
                                     	
                                         <div class="mb-3">
-                                            <label for="doctor_name" class="col-form-label">Doctor Name:</label>
-                                            <input type="text" class="form-control" id="doctor_name" name="name" value="<%= doctor.getDoctorId()  %>">
+                                            <label for="patient_name" class="col-form-label">Patient Name:</label>
+                                            <input type="text" class="form-control" id="patient_name" name="patient_name" value="<%= report.getPatient_name()%>" >
                                         </div>
                                         <div class="mb-3">
-                                            <label for="refno" class="col-form-label">Ref No:</label>
-                                            <input type="text" class="form-control" id="refno" name="refno" value="<%= doctor.getRefNo() %>">
+                                            <label for="type" class="col-form-label">Type:</label>
+                                            <input type="text" class="form-control" id="type" name="type" value="<%= report.getType()%>">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="specialization" class="col-form-label">Specialization:</label>
-                                            <input type="text" class="form-control" id="specialization" name="specialization" value="<%= doctor.getSpecialization()%>">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="phone" class="col-form-label">Phone:</label>
-                                            <input type="phone" class="form-control" id="phone" name="phone" value="<%= doctor.getContact() %>">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="email" class="col-form-label">Email:</label>
-                                            <input type="email" class="form-control" id="email" name="email" value="<%= doctor.getEmail() %>">
-                                        </div>
+                                            <label for="status" class="col-form-label">Status:</label>
+                                            <input type="text" class="form-control" id="status" name="status" value="<%= report.getStatus()%>">
+                                        </div>     
+                                        
                                         <div class="modal-footer">
                                     		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                     		<button type="submit" class="btn btn-primary" name="submit">Confirm</button>
@@ -172,21 +153,21 @@
                     
                     <!--delete Appointment Modal --> 
                     
-                     <div class="modal fade" id="delete<%= doctor.getDoctorId() %>" tabindex="-1" aria-labelledby="<%= doctor.getDoctorId() %>"
+                     <div class="modal fade" id="deletevalue="<%= report.getId()%>"" tabindex="-1" aria-labelledby="value="<%= report.getId()%>""
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="<%= doctor.getDoctorId() %>">Delete Doctor</h1>
+                                    <h1 class="modal-title fs-5" id="value="<%= report.getId()%>"">Delete Report</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 
                                 <div class="modal-body">
-									<p>Do you want to remove this Doctor?</p>
+									<p>Do you want to remove this Report?</p>
                                     <div class="modal-footer">
                                     	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                    	<a href="doctor?&id=<%= doctor.getDoctorId() %>"><button type="submit" class="btn btn-danger" name="submit">Confirm</button></a>
+                                    	<a href="report?&id=value="<%= report.getId()%>""><button type="submit" class="btn btn-danger" name="submit">Confirm</button></a>
                                 	</div>
                                 </div>
                             </div>

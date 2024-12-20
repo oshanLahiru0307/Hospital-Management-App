@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="Patient.jsp"><i class="fas fa-user"></i> Patients</a></li>
                 <li><a href="Doctors.jsp"><i class="fas fa-user-md"></i> Doctors</a></li>
-                <li><a href="Announcement.jsp"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                <li><a href="Report.jsp"><i class="fas fa-bullhorn"></i> Reports</a></li>
                 <li><a href="Inventory.jsp"><i class="fas fa-box"></i> Inventory</a></li>
             </ul>
             <div class="logout">

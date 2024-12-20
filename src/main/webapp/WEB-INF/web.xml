@@ -41,13 +41,13 @@
   </servlet-mapping>
   
    <servlet>
-  	<servlet-name>Announcement</servlet-name>
-  	<servlet-class>Controller.Announcement</servlet-class>
+  	<servlet-name>ReportsController</servlet-name>
+  	<servlet-class>Controller.ReportsController</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  	<servlet-name>Announcement</servlet-name>
-  	<url-pattern>/announcement</url-pattern>
+  	<servlet-name>ReportsController</servlet-name>
+  	<url-pattern>/report</url-pattern>
   </servlet-mapping>
   
      <servlet>
