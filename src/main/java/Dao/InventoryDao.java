@@ -32,7 +32,9 @@ private static Connection connection;
 	            preparedStatement.setString(6, inventory.getManufacturer());
 	            preparedStatement.setString(7, inventory.getId());
 	            preparedStatement.executeUpdate();
+	        
 	            System.out.println("inventory is updated in dao");
+	            
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        }

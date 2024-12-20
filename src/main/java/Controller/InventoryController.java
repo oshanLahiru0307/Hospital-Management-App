@@ -55,15 +55,15 @@ public class InventoryController extends HttpServlet {
 				
 				Inventory inventory = new Inventory();
 				
-				inventory.setProduct_name(request.getParameter("id"));
+				inventory.setId(request.getParameter("id"));
 				inventory.setProduct_name(request.getParameter("name"));
 				inventory.setType(request.getParameter("type"));
 				inventory.setPrice(request.getParameter("price"));
 				inventory.setInstock(request.getParameter("stock"));
 				inventory.setExp_date(request.getParameter("exp_date"));
 				inventory.setManufacturer(request.getParameter("manufacturer"));
-				
-				inventorydao.addItem(inventory);
+								
+				inventorydao.updateItem(inventory);
 				
 				RequestDispatcher view = request.getRequestDispatcher("/Inventory.jsp");
 				request.setAttribute("message", "success");
